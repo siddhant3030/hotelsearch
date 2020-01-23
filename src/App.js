@@ -7,7 +7,12 @@ import SingleRoom from "./pages/SingleRoom";
 
 
 function App() {
-  return  <>Hello from app</>
+  return  <>
+  <Home />
+  <Error />
+  <Rooms />
+  <SingleRoom />
+  </>
 }
 
 export default App;
