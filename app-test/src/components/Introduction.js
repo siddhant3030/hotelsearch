@@ -1,8 +1,8 @@
-import react, { Component } from 'react';
+import React, { Component } from 'react';
 
-class Introduction extends Component {
+export default class Introduction extends Component {
     constructor(props) {
-        super(props)
+        super(props);
 
         this.state = {
             message: 'hey there'
