@@ -70,3 +70,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### Mapbox Gl JS
 ### GeoJSON
+
+- Modern mapping frameworks use the GeoJson spec for modelling geospatail data.
+- Standardizes how mapping applications should expect geospatial data.
