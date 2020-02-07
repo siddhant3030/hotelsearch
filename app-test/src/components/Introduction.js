@@ -5,13 +5,17 @@ export default class Introduction extends Component {
         super(props);
 
         this.state = {
-            message: 'hey there'
+            message: 'hey there',
+            userInput: ''
         }
+
+        this.handleInput = this.handleInput.bind(this);
     }
 
  render() {
      return (
         <div>
+            <input value={this.state.userInput} onChange={this.handleInput}/>
             <h1>{this.state.message}</h1>
         </div>
      );
