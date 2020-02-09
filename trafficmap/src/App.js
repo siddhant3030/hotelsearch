@@ -7,13 +7,15 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = {
+      applicationName: 'TrafficMap'
+    }
   }
 
   render() {
     return (
       <div className="App">
-      <Header />
+      <Header appName={this.state.applicationName}/>
       </div>
     )
   }

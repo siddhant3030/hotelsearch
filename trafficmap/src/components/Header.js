@@ -29,7 +29,7 @@ class Header extends Component {
     render() {
         return (
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">TrafficMap</NavbarBrand>
+        <NavbarBrand href="/">{this.props.appName}</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
