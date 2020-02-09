@@ -27,6 +27,7 @@ class Header extends Component {
 
 
     render() {
+        return (
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">TrafficMap</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
@@ -38,6 +39,7 @@ class Header extends Component {
           </Nav>
         </Collapse>
       </Navbar>
+        );
     }
 }
 
