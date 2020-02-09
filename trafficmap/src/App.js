@@ -1,5 +1,7 @@
+import { Container } from 'reactstrap'
 import React, { Component } from 'react';
 import Header from './components/Header'
+import Map from './components/Map'
 
 import './App.css';
 
@@ -16,6 +18,9 @@ class App extends Component {
     return (
       <div className="App">
       <Header appName={this.state.applicationName}/>
+      <Container>
+        <Map />
+      </Container>
       </div>
     )
   }
