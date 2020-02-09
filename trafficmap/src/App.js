@@ -40,7 +40,7 @@ class App extends Component {
         <NavbarBrand href="/">TrafficMap</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="ml-auto" navbar>
             <NavItem>
               1000 Incident
             </NavItem>
