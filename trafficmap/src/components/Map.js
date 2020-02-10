@@ -34,7 +34,7 @@ export default class Map extends Component {
            {...this.state.viewport}
            onViewportChange={viewport => this.setState({ viewport })}>
                { coords.map(coord => (
-                <Marker>
+                <Marker latitude = {coord.latitude} longitude = {coord.longitude}>
                     <Pin />
                 </Marker>
                )) }
