@@ -23,8 +23,8 @@ export default class Map extends Component {
            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
            {...this.state.viewport}
            onViewportChange={viewport => this.setState({ viewport })}>
-                <Marker latitude={} longitude={}>
-
+                <Marker latitude={53.5225} longitude={-113.6242}>
+                    <Pin />
                 </Marker>
            </MapGL>
         )
