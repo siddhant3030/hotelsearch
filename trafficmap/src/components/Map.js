@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import ReactMapGL from 'react-map-gl';
+import MapGL, { Marker } from 'react-map-gl';
+import Pin from './Pin';
 
 export default class Map extends Component {
     constructor(props) {
@@ -18,11 +19,14 @@ export default class Map extends Component {
 
     render() {
         return (
-           <ReactMapGL
+           <MapGL
            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
            {...this.state.viewport}
-           onViewportChange={(viewport) => this.setState({viewport})}
-            />
+           onViewportChange={viewport => this.setState({ viewport })}>
+                <Marker latitude={} longitude={}>
+
+                </Marker>
+           </MapGL>
         )
     }
 }
